@@ -171,7 +171,7 @@ To set up locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/imf-gadget-api.git
+   git clone https://github.com/Frontkick/Phoenix-IMF-Gadget
    cd imf-gadget-api
    ```
 
