@@ -7,6 +7,8 @@ const gadgetRoutes = require('./routes/gadget');
 dotenv.config();
 
 const app = express();
+const cors = require('cors');
+app.use(cors());
 
 // Middleware to parse JSON requests
 app.use(express.json());
@@ -14,6 +16,7 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/gadgets', gadgetRoutes);
+
 
 // Sync the database
 sequelize.sync()
